@@ -24,11 +24,11 @@ class Team {
     return {
       next() {
         if (current < last) {
-          const valueCurrent = members[current];
+          const person = members[current];
           current += 1;
           return {
             done: false,
-            value: valueCurrent,
+            value: person,
           };
         }
         return {
